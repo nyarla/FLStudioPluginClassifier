@@ -141,11 +141,10 @@ class FLPluginDB {
   }
 }
 
-const DB = new FLPluginDB(
-  await Bun.file(new URL("aliases.json", import.meta.url)).json(),
-);
+async function main(json?: string) {
+  const alias = json ? await Bun.file(json).json() : {};
+  const DB = new FLPluginDB(alias);
 
-async function main() {
   const files = await DB.lookupInstalledPlugins();
 
   for (const relativePath of files) {
@@ -153,4 +152,4 @@ async function main() {
   }
 }
 
-main();
+main(process.argv[2]);
