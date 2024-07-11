@@ -1,0 +1,27 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^20.14.10",
+    "@textlint-rule/textlint-rule-no-duplicate-abbr": "^1.0.2",
+    "@textlint-rule/textlint-rule-no-invalid-control-character": "^2.0.0",
+    "@textlint-rule/textlint-rule-no-unmatched-pair": "^2.0.2",
+    "textlint": "^14.0.4",
+    "textlint-rule-alex": "^5.0.0",
+    "textlint-rule-date-weekday-mismatch": "^1.0.6",
+    "textlint-rule-first-sentence-length": "^2.0.0",
+    "textlint-rule-max-comma": "^4.0.0",
+    "textlint-rule-no-exclamation-question-mark": "^1.1.0",
+    "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
+    "textlint-rule-no-zero-width-spaces": "^1.0.1",
+    "textlint-rule-rousseau": "^1.4.8",
+    "textlint-rule-sentence-length": "^5.0.0",
+    "textlint-rule-write-good": "^2.0.0"
+  },
+  "name": "flstudiopluginclassifier",
+  "module": "index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
